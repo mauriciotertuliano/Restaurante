@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+   
+
+    
+}
+
+.container {
+    max-width:390px;
+    margin: 0 auto;
+    background-color: rgb(113, 221, 221);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:  13px ;
+    color: rgb(119, 2, 27);
+}
+.titulo{
+    color: #e2750f;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+
+select
+ {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #160505;
+}
+
+select {
+    height: 40px;
+}
+
+button[type="submit"] {
+    background-color:#ffc506;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: red;
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ff4800;
+    font-weight: 100;
+    cursor: pointer;
+
+}
+
+/*btn voltar*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+body{
+  background: #111;
+}
+
+a{
+  background: #000;
+  color: #e62626;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  margin: 55rem;
+  position:-ms-page;
+  margin-bottom: auto;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  transition: .6s;
+  overflow: hidden;
+  &:focus{
+    outline: 0;
+  }
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-100px)  skewX(-15deg);
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+  &:hover{
+    background: rgb(232, 231, 238);
+    cursor: pointer;
+    &:before{
+      transform: translateX(300px)  skewX(-15deg);  
+      opacity: 0.6;
+      transition: .7s;
+    }
+    &:after{
+      transform: translateX(300px) skewX(-15deg);  
+      opacity: 1;
+      transition: .5s;
+    }
+  }
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="titulo">  Restaurante PIONERO </title>   
+    <link rel="stylesheet" href="pedido.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Restaurante Pionero Pedido</h1>
+        <form id="pedidoForm">
+            <label for="cliente"><strong>Nome do Cliente:</strong></label>
+            <input type="text" id="cliente" name="cliente" required>
+
+            <label for="comidas">Prato Desejado:</label>
+            <select id="comidas" name="comidas">
+                <option value="Chilaquiles">Chilaquiles</option>
+                <option value="Pozole">Pozole</option>
+                <option value="Tacos al Pastor">Tacos al Pastor</option>
+                <option value="Nachos">Nachos</option>
+                <option value="Elote">Elote</option>
+                <option value="Mole Poblano">Mole Poblano</option>
+                <option value="Tamales">Tamales</option>
+                <option value="Enchiladas">Enchiladas</option>
+                <option value="Churros">Churros</option>
+                <option value="Empanadas">Empanadas</option>
+                <option value="Tacos Vegano">Tacos Vegano</option>
+                <option value="Fajitas de carne">Fajitas de carne</option>
+            </select>
+
+            <label for="quantidadeComida">Quantidade:</label>
+            <input type="number" id="quantidadeComida" name="quantidadeComida" required>
+
+            <label for="bebida"><strong>Bebida:</strong></label>
+            <select id="bebida" name="bebida">
+                <option value="Água">MICHELADA</option>
+                <option value="Refrigerante">COBÁ</option>
+                <option value="Cerveja">DRINK</option>
+                <option value="Outro">VINHOS</option>
+                <option value="Cerveja">WHISSKY ou CERVEJAS</option>
+                <option value="Outro">REFRIGERANTES</option>
+            </select>
+
+            <label for="quantidadeBebida">Quantidade:</label>
+            <input type="number" id="quantidadeBebida" name="quantidadeBebida" required>
+
+            <label for="tipoPedido">Tipo de Pedido:</label>
+            <select id="tipoPedido" name="tipoPedido">
+                <option value="para-viagem">Para Viagem</option>
+                <option value="entrega">Entrega</option>
+                <option value="comer-no-local">Comer no Local</option>
+            </select>
+
+            <label for="formaPagamento"><strong>Forma de Pagamento:</strong></label>
+            <select id="formaPagamento" name="formaPagamento">
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao-credito">Cartão de Crédito</option>
+                <option value="cartao-debito">Cartão de Débito</option>
+                <option value="Pix">Pix</option>
+
+            </select>
+
+            <label for="observacoes">Observações Especiais:</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+    
+    <a  href="index.html#cardapio">voltar</a>
+    
+</body>
+</html>
